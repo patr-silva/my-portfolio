@@ -1,15 +1,15 @@
 import React from "react";
 import { useTheme } from "../context/ThemeContext";
 
-const ThemeToggle: React.FC = () => {
+const ThemeToggle: React.FC<{ menuOpen: boolean }> = ({ menuOpen }) => {
   const { darkMode, toggleDarkMode } = useTheme();
 
   return (
     <button
       onClick={toggleDarkMode}
-      className='p-2 bg-gray-200 dark:bg-gray-700 rounded'
+      className={`p-2 dark:bg-gray-700 ${menuOpen ? "hidden" : ""}`}
     >
-      {darkMode ? "🌞 Light Mode" : "🌙 Dark Mode"}
+      {darkMode ? "🌞" : "🌙"}
     </button>
   );
 };
