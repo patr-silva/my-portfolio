@@ -6,13 +6,13 @@ const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className='p-4 bg-white dark:bg-gray-800'>
-      <nav className='bg-white border-gray-200 dark:bg-gray-900'>
+    <header className='p-4 bg-white dark:bg-neutral-900'>
+      <nav className='bg-white border-neutral-700 dark:bg-neutral-900'>
         <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
           <button
             data-collapse-toggle='navbar-default'
             type='button'
-            className='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+            className='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-neutral-500 rounded-lg md:hidden hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:ring-neutral-600'
             aria-controls='navbar-default'
             aria-expanded='false'
             onClick={() =>
@@ -42,11 +42,11 @@ const Header: React.FC = () => {
             className={`${menuOpen ? "" : "hidden"} w-full md:block md:w-auto`}
             id='navbar-default'
           >
-            <ul className='font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'>
+            <ul className='font-medium inter-regular flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-10 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-neutral-800 md:dark:bg-neutral-900 dark:border-neutral-700'>
               <li>
                 <NavLink
                   to='/'
-                  className='block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500'
+                  className='block py-2 px-3 text-neutral-900 rounded md:bg-transparent md:text-red md:p-0 dark:text-white md:dark:text-red'
                   aria-current='page'
                 >
                   Home
@@ -55,7 +55,7 @@ const Header: React.FC = () => {
               <li>
                 <NavLink
                   to='/about'
-                  className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                  className='block py-2 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red md:p-0 dark:text-white md:dark:hover:text-red dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent'
                 >
                   About
                 </NavLink>
@@ -63,7 +63,7 @@ const Header: React.FC = () => {
               <li>
                 <NavLink
                   to='/skills'
-                  className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                  className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red md:p-0 dark:text-white md:dark:hover:text-red dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent'
                 >
                   Skills
                 </NavLink>
@@ -71,7 +71,7 @@ const Header: React.FC = () => {
               <li>
                 <NavLink
                   to='/projects'
-                  className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                  className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red md:p-0 dark:text-white md:dark:hover:text-red dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent'
                 >
                   Projects
                 </NavLink>
@@ -79,14 +79,14 @@ const Header: React.FC = () => {
               <li>
                 <NavLink
                   to='/contacts'
-                  className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                  className='block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red md:p-0 dark:text-white md:dark:hover:text-red dark:hover:bg-neutral-700 dark:hover:text-white md:dark:hover:bg-transparent'
                 >
                   Contacts
                 </NavLink>
               </li>
             </ul>
           </div>
-          <ThemeToggle menuOpen={menuOpen}/>
+          <ThemeToggle menuOpen={menuOpen} />
         </div>
       </nav>
     </header>

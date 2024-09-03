@@ -10,7 +10,7 @@ interface TypewriterProps {
 const Typewriter: React.FC<TypewriterProps> = ({
   text,
   speed = 100,
-  highlightColor = "red",
+  highlightColor = "#F15B5B",
 }) => {
   const [displayedText, setDisplayedText] = useState<string[]>([]);
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
@@ -40,20 +40,25 @@ const Typewriter: React.FC<TypewriterProps> = ({
   }, [currentCharIndex, currentLineIndex, text, speed]);
 
   return (
-    <div className='typewriter'>
+    <div className='typewriter inter-regular'>
       {displayedText.map((line, index) => {
-        const isLastLine = index === text.length - 1;
-        const isLastWord = isLastLine && line === text[text.length - 1];
         return (
           <div key={index} style={{ whiteSpace: "pre-wrap" }}>
             {line.split(" ").map((word, wordIndex) => {
-              const isLastWordInLine =
-                isLastWord && wordIndex === line.split(" ").length - 1;
+              const cleanedWord = word
+                .replace(/[.,/#!$%^&*;:{}=\-_`~()]/g, "")
+                .trim();
+
+              const isHighlighted =
+                cleanedWord === "FullStack" ||
+                cleanedWord === "Developer" ||
+                cleanedWord === "Patrícia";
+
               return (
                 <span
                   key={wordIndex}
                   style={
-                    isLastWordInLine ? { color: highlightColor } : undefined
+                    isHighlighted ? { color: `${highlightColor}` } : undefined
                   }
                 >
                   {word + " "}

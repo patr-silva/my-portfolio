@@ -1,19 +1,4 @@
-/* Typewriter.css */
-
 .typewriter {
-  font-size: 1.5em;
-  font-family: 'Courier', monospace;
+  font-size: 5em;
   overflow: hidden;
-  border-right: 0.15em solid;
-  animation: blink-caret 0.75s step-end infinite;
-}
-
-/* Blinking caret animation */
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: black;
-  }
 }
