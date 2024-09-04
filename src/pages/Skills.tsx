@@ -2,24 +2,6 @@ import React from "react";
 import TitlesTypewriter from "../components/TitlesTypeWriter";
 
 const Skills: React.FC = () => {
-  const skillsData = {
-    Languages: ["JavaScript", "Java", "TypeScript", "HTML", "CSS"],
-    "Frameworks & Libraries": [
-      "React",
-      "Redux",
-      "Next.js",
-      "Tailwind",
-      "Bootstrap",
-      "Ant Design",
-      "Express",
-      "Spring",
-      "Hibernate",
-    ],
-    Tools: ["Git", "GitHub", "VSCode", "IntelliJ", "Vim", "Postman"],
-    Databases: ["MySQL", "MongoDB"],
-    Testing: ["JUnit", "Mockito"],
-    Other: ["Canva", "Maven", "Tomcat"],
-  };
 
   return (
     <div className='bg-white dark:bg-neutral-900 text-black dark:text-white min-h-screen mt-[-1em]'>
@@ -28,7 +10,7 @@ const Skills: React.FC = () => {
 
         <div className=''>
           <h2 className='inter-regular my-4 text-3xl'>Languages</h2>
-          <div className='flex space-x-9 py-5 justify-center w-2/3 dark:bg-neutral-800 rounded-2xl'>
+          <div className='flex space-x-9 py-5 justify-center w-2/3 dark:bg-neutral-800 border-2 border-neutral-600 rounded-2xl'>
             <img
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg'
               alt='Java'
@@ -67,7 +49,7 @@ const Skills: React.FC = () => {
           <h2 className='inter-regular my-4 text-3xl'>
             Frameworks & Libraries
           </h2>
-          <div className='flex space-x-9 py-5 justify-center w-2/3 dark:bg-neutral-800 rounded-2xl'>
+          <div className='flex space-x-9 py-5 justify-center w-2/3 dark:bg-neutral-800 border-2 border-neutral-600 rounded-2xl'>
             <img
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg'
               alt='React'
@@ -103,7 +85,7 @@ const Skills: React.FC = () => {
 
         <div className='py-5'>
           <h2 className='inter-regular my-4 text-3xl'>Backend Technologies</h2>
-          <div className='flex space-x-9 py-5 justify-center w-3/6 dark:bg-neutral-800 rounded-2xl'>
+          <div className='flex space-x-9 py-5 justify-center w-3/6 dark:bg-neutral-800 border-2 border-neutral-600 rounded-2xl'>
             <img
               className='h-16'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg'
@@ -134,7 +116,7 @@ const Skills: React.FC = () => {
 
         <div className='py-5'>
           <h2 className='inter-regular my-4 text-3xl'>Databases</h2>
-          <div className='flex space-x-9 py-5 justify-center w-1/3 dark:bg-neutral-800 rounded-2xl'>
+          <div className='flex space-x-9 py-5 justify-center w-1/3 dark:bg-neutral-800 border-2 border-neutral-600 rounded-2xl'>
             <img
               className='h-16'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg'
@@ -152,7 +134,7 @@ const Skills: React.FC = () => {
 
         <div className='py-5'>
           <h2 className='inter-regular my-4 text-3xl'>Testing</h2>
-          <div className='flex space-x-9 py-5 justify-center w-24 dark:bg-neutral-800 rounded-2xl'>
+          <div className='flex space-x-9 py-5 justify-center w-24 dark:bg-neutral-800 border-2 border-neutral-600 rounded-2xl'>
             <img
               className='h-16'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-plain-wordmark.svg'
@@ -164,7 +146,7 @@ const Skills: React.FC = () => {
 
         <div className='py-5'>
           <h2 className='inter-regular my-4 text-3xl'>Tools</h2>
-          <div className='flex space-x-9 py-5 justify-center w-5/6 dark:bg-neutral-800 rounded-2xl'>
+          <div className='flex space-x-9 py-5 justify-center w-5/6 dark:bg-neutral-800 border-2 border-neutral-600 rounded-2xl'>
             <img
               className='h-16'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg'
@@ -206,7 +188,7 @@ const Skills: React.FC = () => {
 
         <div className='py-5'>
           <h2 className='inter-regular my-4 text-3xl'>Others</h2>
-          <div className='flex space-x-9 py-5 justify-center w-1/3 dark:bg-neutral-800 rounded-2xl'>
+          <div className='flex space-x-9 py-5 justify-center w-1/3 dark:bg-neutral-800 border-2 border-neutral-600 rounded-2xl'>
             <img
               className='h-16'
               src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg'
