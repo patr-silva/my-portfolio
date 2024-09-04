@@ -27,198 +27,195 @@ const Skills: React.FC = () => {
         <TitlesTypewriter text='Skills' />
 
         <div className=''>
-          <h2>Languages</h2>
-          <div className='flex row space-x-5'>
+          <h2 className='inter-regular my-4 text-3xl'>Languages</h2>
+          <div className='flex space-x-9 py-5 justify-center w-2/3 dark:bg-neutral-800 rounded-2xl'>
             <img
-              src='https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png'
-              alt='HTML'
-              title='HTML'
-              className='w-24'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg'
+              alt='Java'
+              title='Java'
+              className='h-16'
             />
             <img
-              src='https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png'
-              alt='CSS'
-              title='CSS'
-              className='w-24'
-            />
-            <img
-              src='https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png'
+              className='h-16'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg'
               alt='JavaScript'
               title='JavaScript'
-              className='w-24'
             />
 
             <img
-              src='https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg'
               alt='TypeScript'
               title='TypeScript'
-              className='w-24'
+              className='h-16'
             />
             <img
-              src='https://user-images.githubusercontent.com/25181517/117201156-9a724800-adec-11eb-9a9d-3cd0f67da4bc.png'
-              alt='Java'
-              title='Java'
-              className='w-24'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg'
+              alt='HTML'
+              title='HTML'
+              className='h-16'
+            />
+            <img
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg'
+              alt='CSS'
+              title='CSS'
+              className='h-16'
             />
           </div>
         </div>
 
-        <div className=''>
-          <h2>Frameworks & Libraries</h2>
-          <div className='flex row space-x-5'>
+        <div className='py-5'>
+          <h2 className='inter-regular my-4 text-3xl'>
+            Frameworks & Libraries
+          </h2>
+          <div className='flex space-x-9 py-5 justify-center w-2/3 dark:bg-neutral-800 rounded-2xl'>
             <img
-              src='https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg'
               alt='React'
               title='React'
-              className='w-24'
+              className='h-16'
             />
             <img
-              src='https://github.com/marwin1991/profile-technology-icons/assets/136815194/5f8c622c-c217-4649-b0a9-7e0ee24bd704'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg'
               alt='Next.js'
               title='Next.js'
-              className='w-24'
+              className='h-16'
             />
             <img
-              src='https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg'
               alt='Tailwind CSS'
               title='Tailwind CSS'
-              className='w-24'
+              className='h-16'
             />
             <img
-              className='w-24'
-              src='https://user-images.githubusercontent.com/25181517/183898054-b3d693d4-dafb-4808-a509-bab54cf5de34.png'
+              className='h-16'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg'
               alt='Bootstrap'
               title='Bootstrap'
             />
             <img
-              className='w-24'
-              src='https://user-images.githubusercontent.com/25181517/190887795-99cb0921-e57f-430b-a111-e165deedaa36.png'
+              className='h-16'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/antdesign/antdesign-original.svg'
               alt='Ant Design'
               title='Ant Design'
             />
           </div>
         </div>
 
-        <div className=''>
-          <h2>Backend Technologies</h2>
-          <div className='flex row space-x-5'>
+        <div className='py-5'>
+          <h2 className='inter-regular my-4 text-3xl'>Backend Technologies</h2>
+          <div className='flex space-x-9 py-5 justify-center w-3/6 dark:bg-neutral-800 rounded-2xl'>
             <img
-              className='w-24'
-              src='https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png'
+              className='h-16'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg'
+              alt='Spring'
+              title='Spring'
+            />
+            <img
+              className='h-16'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/hibernate/hibernate-original-wordmark.svg'
+              alt='Hibernate'
+              title='Hibernate'
+            />
+            <img
+              className='h-16'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg'
               alt='Node.js'
               title='Node.js'
             />
 
             <img
-              className='w-24'
+              className='h-16'
               src='https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png'
               alt='Express'
               title='Express'
             />
-            <img
-              className='w-24'
-              src='https://user-images.githubusercontent.com/25181517/117201470-f6d56780-adec-11eb-8f7c-e70e376cfd07.png'
-              alt='Spring'
-              title='Spring'
-            />
-            <img
-              className='w-24'
-              src='https://user-images.githubusercontent.com/25181517/117207493-49665200-adf4-11eb-808e-a9c0fcc2a0a0.png'
-              alt='Hibernate'
-              title='Hibernate'
-            />
           </div>
         </div>
 
-        <div className=''>
-          <h2>Databases</h2>
-          <div className='flex row space-x-5'>
+        <div className='py-5'>
+          <h2 className='inter-regular my-4 text-3xl'>Databases</h2>
+          <div className='flex space-x-9 py-5 justify-center w-1/3 dark:bg-neutral-800 rounded-2xl'>
             <img
-              className='w-24'
-              src='https://user-images.githubusercontent.com/25181517/183896128-ec99105a-ec1a-4d85-b08b-1aa1620b2046.png'
+              className='h-16'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg'
               alt='MySQL'
               title='MySQL'
             />
             <img
-              className='w-24'
-              src='https://user-images.githubusercontent.com/25181517/182884177-d48a8579-2cd0-447a-b9a6-ffc7cb02560e.png'
+              className='h-16'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg'
               alt='mongoDB'
               title='mongoDB'
             />
           </div>
         </div>
 
-        <div className=''>
-          <h2>Testing</h2>
-          <div className='flex row space-x-5'>
+        <div className='py-5'>
+          <h2 className='inter-regular my-4 text-3xl'>Testing</h2>
+          <div className='flex space-x-9 py-5 justify-center w-24 dark:bg-neutral-800 rounded-2xl'>
             <img
-              className='w-24'
-              src='https://user-images.githubusercontent.com/25181517/117533873-484d4480-afef-11eb-9fad-67c8605e3592.png'
+              className='h-16'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-plain-wordmark.svg'
               alt='JUnit'
               title='JUnit'
-            />
-            <img
-              className='w-24'
-              src='https://user-images.githubusercontent.com/25181517/183892181-ad32b69e-3603-418c-b8e7-99e976c2a784.png'
-              alt='mocikto'
-              title='mocikto'
             />
           </div>
         </div>
 
-        <div className=''>
-          <h2>Tools</h2>
-          <div className='flex row space-x-5'>
+        <div className='py-5'>
+          <h2 className='inter-regular my-4 text-3xl'>Tools</h2>
+          <div className='flex space-x-9 py-5 justify-center w-5/6 dark:bg-neutral-800 rounded-2xl'>
             <img
-              className='w-24'
-              src='https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png'
+              className='h-16'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg'
               alt='Git'
               title='Git'
             />
             <img
-              className='w-24'
-              src='https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png'
+              className='h-16'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg'
               alt='GitHub'
               title='GitHub'
             />
             <img
-              className='w-24'
-              src='https://user-images.githubusercontent.com/25181517/192108889-232b3431-a585-4b36-a62d-9078bd3641d9.png'
+              className='h-16'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vim/vim-original.svg'
               alt='Vim'
               title='Vim'
             />
             <img
-              className='w-24'
-              src='https://user-images.githubusercontent.com/25181517/192108890-200809d1-439c-4e23-90d3-b090cf9a4eea.png'
+              className='h-16'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg'
               alt='IntelliJ'
               title='IntelliJ'
             />
             <img
-              className='w-24'
-              src='https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png'
+              className='h-16'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg'
               alt='Visual Studio Code'
               title='Visual Studio Code'
             />
             <img
-              className='w-24'
-              src='https://user-images.githubusercontent.com/25181517/192109061-e138ca71-337c-4019-8d42-4792fdaa7128.png'
+              className='h-16'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg'
               alt='Postman'
               title='Postman'
             />
           </div>
         </div>
-        <div className=''>
-          <h2>Other</h2>
-          <div className='flex row space-x-5'>
+
+        <div className='py-5'>
+          <h2 className='inter-regular my-4 text-3xl'>Others</h2>
+          <div className='flex space-x-9 py-5 justify-center w-1/3 dark:bg-neutral-800 rounded-2xl'>
             <img
-              className='w-24'
-              src='https://github-production-user-asset-6210df.s3.amazonaws.com/136815194/253220886-02494c7c-de6a-43a6-9293-6369696842ed.png'
+              className='h-16'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg'
               alt='Canva'
               title='Canva'
             />
             <img
-              className='w-24'
-              src='https://user-images.githubusercontent.com/25181517/183894676-137319b5-1364-4b6a-ba4f-e9fc94ddc4aa.png'
+              className='h-16'
+              src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tomcat/tomcat-original.svg'
               alt='Tomcat'
               title='Tomcat'
             />
