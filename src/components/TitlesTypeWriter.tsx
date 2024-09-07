@@ -14,12 +14,11 @@ const TitlesTypewriter: React.FC<TitlesTypewriterProps> = ({
 
   useEffect(() => {
     let index = 0;
-
     const type = () => {
-      if (index < text.length - 1) {
+      if (index < text.length-1) {
         setDisplayedText((prev) => prev + text[index]);
         index++;
-        setTimeout(type, speed);
+        requestAnimationFrame(() => setTimeout(type, speed));
       }
     };
 
@@ -31,9 +30,7 @@ const TitlesTypewriter: React.FC<TitlesTypewriterProps> = ({
   }, [text, speed]);
 
   return (
-    <div
-      className='typewriter inter-regular mb-10 text-9xl h-28 font-bold text-black dark:text-white sm:mt-3'
-    >
+    <div className='typewriter inter-regular mb-10 text-9xl h-28 font-bold text-black dark:text-white sm:mt-3'>
       {displayedText}
     </div>
   );
