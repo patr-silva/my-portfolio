@@ -32,7 +32,7 @@ const TitlesTypewriter: React.FC<TitlesTypewriterProps> = ({
 
   return (
     <div
-      className='typewriter inter-regular mb-10 text-5xl font-bold text-black dark:text-white sm:mt-3'
+      className='typewriter inter-regular mb-10 text-9xl h-28 font-bold text-black dark:text-white sm:mt-3'
     >
       {displayedText}
     </div>

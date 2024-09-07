@@ -40,7 +40,7 @@ const Typewriter: React.FC<TypewriterProps> = ({
   }, [currentCharIndex, currentLineIndex, text, speed]);
 
   return (
-    <div className='typewriter inter-regular'>
+    <div className='typewriter inter-regular h-25'>
       {displayedText.map((line, index) => {
         return (
           <div key={index} style={{ whiteSpace: "pre-wrap" }}>
@@ -50,9 +50,9 @@ const Typewriter: React.FC<TypewriterProps> = ({
                 .trim();
 
               const isHighlighted =
-                cleanedWord === "FullStack" ||
-                cleanedWord === "Developer" ||
-                cleanedWord === "Patrícia";
+                cleanedWord.startsWith("F") ||
+                cleanedWord.startsWith("D") ||
+                cleanedWord.startsWith("P");
 
               return (
                 <span

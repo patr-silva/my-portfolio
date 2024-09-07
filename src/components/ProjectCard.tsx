@@ -10,7 +10,7 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, image, linkTo }) => {
   return (
     <Link to={linkTo}>
-      <div className='relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24'>
+      <div className='relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24 border-1 border-neutral-700'>
         <img
           src={image}
           alt={title}
