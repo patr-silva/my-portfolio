@@ -5,13 +5,7 @@ const About: React.FC = () => {
   return (
     <div className='bg-white dark:bg-neutral-900 text-black dark:text-white min-h-screen mt-[-1em]'>
       <article className='inter-regular-text text-justify mx-auto max-w-4xl px-4 sm:px-6 md:px-8 lg:px-10 py-4 w-full'>
-        <Typewriter
-          text={[
-            "About me"
-          ]}
-          speed={100}
-          highlightColor='#f15b5b'
-        />
+        <Typewriter text={["About me"]} speed={100} highlightColor='#f15b5b' />
 
         <p className='text-lg dark:text-neutral-200 mt-16'>
           👋 <span className='font-semibold'> Hey there!</span> I'm Patrícia, a
@@ -30,12 +24,18 @@ const About: React.FC = () => {
         </p>
 
         <p className='mt-4 text-lg dark:text-neutral-200'>
-          💪 <span className='font-semibold'>Collaboration is Key:</span> One of
-          the aspects I find most fulfilling in software development is the
-          collaborative environment. Teamwork is not just essential for
-          delivering successful projects; it's also a vital part of personal and
-          professional growth. I believe that working together with diverse
-          minds leads to innovative outcomes and a richer learning experience.
+          💡{" "}
+          <span className='font-semibold'>
+            A Commitment to Lifelong Learning:
+          </span>{" "}
+          One of the things that drives me every day is the desire to constantly
+          learn and grow. In the ever-evolving world of technology, there's
+          always something new to explore, whether it's mastering a new
+          framework, improving my coding skills, or learning from others. I
+          believe that learning is not just an individual pursuit but a
+          collaborative effort. Sharing knowledge and exchanging ideas with
+          others not only helps me grow but also enriches the entire development
+          process.
         </p>
 
         <p className='mt-4 text-lg dark:text-neutral-200'>
