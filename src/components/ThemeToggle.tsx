@@ -20,4 +20,3 @@ const ThemeToggle: React.FC<{ menuOpen: boolean }> = ({ menuOpen }) => {
 };
 
 export default ThemeToggle;
-

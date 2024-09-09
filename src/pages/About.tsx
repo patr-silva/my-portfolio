@@ -4,7 +4,7 @@ import Typewriter from "../components/Typewriter";
 const About: React.FC = () => {
   return (
     <div className='bg-white dark:bg-neutral-900 text-black dark:text-white min-h-screen mt-[-1em]'>
-      <article className='inter-regular-text text-justify mx-auto max-w-4xl px-4 sm:px-6 md:px-8 lg:px-10 py-4 w-full'>
+      <article className='inter-regular-text text-justify mx-auto max-w-6xl px-4 sm:px-6 md:px-8 lg:px-10 py-4 w-full'>
         <Typewriter text={["About me"]} speed={100} highlightColor='#f15b5b' />
 
         <p className='text-lg dark:text-neutral-200 mt-16'>

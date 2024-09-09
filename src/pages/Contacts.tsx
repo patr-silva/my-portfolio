@@ -5,17 +5,18 @@ import "./Contacts.css";
 const Contacts: React.FC = () => {
   const listItemsStyle =
     "underline-animation text-6xl font-medium cursor-pointer";
-
   return (
-    <div className='bg-white dark:bg-neutral-900 text-black dark:text-white min-h-screen mt-[-1em] mb-[10rem]'>
-      <article className='inter-regular-text text-justify mx-auto max-w-4xl px-4 sm:px-6 md:px-1 lg:px-1 w-[100vw] py-4'>
-        <Typewriter
-          text={["Get in touch"]}
-          speed={100}
-          highlightColor='#f15b5b'
-        />
+    <div className='bg-white dark:bg-neutral-900 text-black dark:text-white min-h-screen mt-[-1em]'>
+      <article className='inter-regular-text text-justify mx-auto max-w-6xl px-4 sm:px-6 md:px-8 lg:px-10 py-4 w-full'>
+        <div className='my-20'>
+          <Typewriter
+            text={["Get in touch"]}
+            speed={100}
+            highlightColor='#f15b5b'
+          />
+        </div>
 
-        <ul className='space-y-2 list-none mt-10'>
+        <ul className='space-y-6 list-none'>
           <li className={listItemsStyle}>
             <a
               href='https://www.linkedin.com/in/patr-silva/'
@@ -44,6 +45,7 @@ const Contacts: React.FC = () => {
               Email
             </a>
           </li>
+
           <br />
           <li className={listItemsStyle}>
             <a href='/cv.pdf' download='cv.pdf' className={listItemsStyle}>

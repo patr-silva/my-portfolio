@@ -37,7 +37,6 @@ const Header: React.FC = () => {
               />
             </svg>
           </button>
-
           <div
             className={`${menuOpen ? "" : "hidden"} w-full md:block md:w-auto`}
             id='navbar-default'
