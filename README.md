@@ -1,5 +1,5 @@
 <div align="center">
-<h1 align="center">My Portfolio</h1>
+<h1 align="center">My Portfolio 🚀</h1>
 <p align="center">
 Welcome to my portfolio! This project showcases my work, skills, and interests in web development.
 </p>
@@ -25,8 +25,8 @@ This portfolio is built using React, TypeScript, and TailwindCSS. It provides a 
 * ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat-square&logo=javascript&logoColor=%23F7DF1E) 
 * ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat-square&logo=css3&logoColor=white) 
 * ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=flat-square&logo=vercel&logoColor=white) 
-   
+
 <h1 id="screenshots">Screenshots</h1>
-<img width="440" alt="Homepage" src="https://github.com/user-attachments/assets/0dc06e38-b914-4d6f-ac1a-f04e4db1d35c">
-<img width="440" alt="Homepage" src="https://github.com/user-attachments/assets/c4d9013c-52ec-4076-a33a-f054abbca42a">
-<img width="440" alt="Homepage" src="https://github.com/user-attachments/assets/2550d560-b7d1-43ca-bf36-ec0dfef5ca42">
+<img width="440" alt="Homepage" src="https://github.com/user-attachments/assets/72f51f7c-e88c-44e8-853d-ed0b2ec4771c">
+<img width="440" alt="Homepage" src="https://github.com/user-attachments/assets/db1a896f-07c4-4673-906f-26a505e41fcf">
+<img width="440" alt="Homepage" src="https://github.com/user-attachments/assets/2c5f320b-4fbe-4d23-bc97-d1f60642701e">
