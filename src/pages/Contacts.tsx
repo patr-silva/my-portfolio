@@ -8,14 +8,14 @@ const Contacts: React.FC = () => {
 
   return (
     <div className='bg-white dark:bg-neutral-900 text-black dark:text-white min-h-screen mt-[-1em] mb-[10rem]'>
-      <article className='inter-regular-text text-justify mx-auto max-w-4xl px-4 sm:px-6 md:px-1 lg:px-1 w-[100vw]'>
+      <article className='inter-regular-text text-justify mx-auto max-w-4xl px-4 sm:px-6 md:px-1 lg:px-1 w-[100vw] py-4'>
         <Typewriter
           text={["Get in touch"]}
           speed={100}
           highlightColor='#f15b5b'
         />
 
-        <ul className='space-y-2 list-none'>
+        <ul className='space-y-2 list-none mt-10'>
           <li className={listItemsStyle}>
             <a
               href='https://www.linkedin.com/in/patr-silva/'
