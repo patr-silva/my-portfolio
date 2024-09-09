@@ -8,7 +8,7 @@ const ThemeToggle: React.FC<{ menuOpen: boolean }> = ({ menuOpen }) => {
   return (
     <button
       onClick={toggleDarkMode}
-      className={`p-2 dark:bg-neutral-900 ${menuOpen ? "hidden" : ""}`}
+      className={`ml-auto p-2 dark:bg-neutral-900 ${menuOpen ? "hidden" : ""}`}
     >
       {darkMode ? (
         <SunIcon className='size-7 text-white' />

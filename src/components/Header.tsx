@@ -8,7 +8,7 @@ const Header: React.FC = () => {
   return (
     <header className='p-4 bg-white dark:bg-neutral-900'>
       <nav className='bg-white border-neutral-700 dark:bg-neutral-900'>
-        <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
+        <div className='max-w-[100vw] flex flex-wrap items-center justify-between p-4'>
           <button
             data-collapse-toggle='navbar-default'
             type='button'
