@@ -1,5 +1,5 @@
 import React from "react";
-import TitlesTypewriter from "../components/TitlesTypeWriter";
+import Typewriter from "../components/Typewriter";
 import ProjectCard from "../components/ProjectCard";
 import race4life from "../assets/images/race4life.jpeg";
 import recipe from "../assets/images/recipe.png";
@@ -57,7 +57,12 @@ const Projects: React.FC = () => {
   return (
     <div className='bg-white dark:bg-neutral-900 text-black dark:text-white min-h-screen mt-[-1em] mb-[10rem]'>
       <article className='inter-regular-text text-justify mx-auto max-w-4xl px-4 sm:px-6 md:px-1 lg:px-1 py-4 w-[100vw]'>
-        <TitlesTypewriter text='Projects' />
+        <Typewriter
+          text={["Projects"]}
+          speed={100}
+          highlightColor='#000'
+          height='h-32'
+        />
         <div className='flex flex-wrap my-[-5%]'>
           {projects.map((elem, index) => {
             return (

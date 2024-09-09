@@ -5,12 +5,14 @@ interface TypewriterProps {
   text: string[];
   speed?: number;
   highlightColor?: string;
+  height?: string;
 }
 
 const Typewriter: React.FC<TypewriterProps> = ({
   text,
   speed = 100,
   highlightColor = "#F15B5B",
+  height = "h-30",
 }) => {
   const [displayedText, setDisplayedText] = useState<string[]>([]);
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
@@ -40,7 +42,7 @@ const Typewriter: React.FC<TypewriterProps> = ({
   }, [currentCharIndex, currentLineIndex, text, speed]);
 
   return (
-    <div className='typewriter inter-regular h-25'>
+    <div className={`typewriter inter-regular ${height}`}>
       {displayedText.map((line, index) => {
         return (
           <div key={index} style={{ whiteSpace: "pre-wrap" }}>
@@ -52,7 +54,7 @@ const Typewriter: React.FC<TypewriterProps> = ({
               const isHighlighted =
                 cleanedWord.startsWith("F") ||
                 cleanedWord.startsWith("D") ||
-                cleanedWord.startsWith("P");
+                (cleanedWord.startsWith("P") && cleanedWord === "Patrícia");
 
               return (
                 <span
