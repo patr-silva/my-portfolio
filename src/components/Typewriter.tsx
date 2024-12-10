@@ -9,8 +9,8 @@ interface TypewriterProps {
 }
 
 const Typewriter: React.FC<TypewriterProps> = ({
-  text,
-  speed = 150,
+  text = [],
+  speed = 100,
   highlightColor = "#F15B5B",
   height = "h-30",
 }) => {
@@ -18,60 +18,61 @@ const Typewriter: React.FC<TypewriterProps> = ({
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
   const [currentCharIndex, setCurrentCharIndex] = useState(0);
 
-  useEffect(() => {
-    const type = () => {
-      if (currentLineIndex < text.length) {
-        const currentLine = text[currentLineIndex];
-        if (currentCharIndex < currentLine.length) {
-          setDisplayedText((prev) => {
-            const newText = [...prev];
-            if (!newText[currentLineIndex]) newText[currentLineIndex] = "";
-            newText[currentLineIndex] += currentLine[currentCharIndex];
-            return newText;
-          });
-          setCurrentCharIndex((prev) => prev + 1);
-        } else {
-          setCurrentCharIndex(0);
-          setCurrentLineIndex((prev) => prev + 1);
-        }
+  const handleTyping = () => {
+    if (currentLineIndex < text.length) {
+      const currentLine = text[currentLineIndex];
+      if (currentCharIndex < currentLine.length) {
+        setDisplayedText((prev) => {
+          const newText = [...prev];
+          if (!newText[currentLineIndex]) newText[currentLineIndex] = "";
+          newText[currentLineIndex] += currentLine[currentCharIndex];
+          return newText;
+        });
+        setCurrentCharIndex((prev) => prev + 1);
+      } else {
+        setCurrentCharIndex(0);
+        setCurrentLineIndex((prev) => prev + 1);
       }
-    };
+    }
+  };
 
-    const timeout = setTimeout(type, speed);
+  useEffect(() => {
+    const timeout = setTimeout(handleTyping, speed);
     return () => clearTimeout(timeout);
   }, [currentCharIndex, currentLineIndex, text, speed]);
 
+  const highlightWord = (word: string) => {
+    const cleanedWord = word.replace(/[.,/#!$%^&*;:{}=\-_`~()]/g, "").trim();
+    return (
+      cleanedWord.startsWith("S") ||
+      cleanedWord.startsWith("D") ||
+      cleanedWord.startsWith("P")
+    );
+  };
+
   return (
-    <div className={`typewriter inter-regular  ${height}`}>
-      {displayedText.map((line, index) => {
-        return (
-          <div key={index} style={{ whiteSpace: "pre-wrap" }} className="leading-tight">
-            {line.split(" ").map((word, wordIndex) => {
-              const cleanedWord = word
-                .replace(/[.,/#!$%^&*;:{}=\-_`~()]/g, "")
-                .trim();
-
-              const isHighlighted =
-                cleanedWord.startsWith("S") ||
-                cleanedWord.startsWith("D") ||
-                cleanedWord.startsWith("P");
-
-              return (
-                <span
-                  key={wordIndex}
-                  style={
-                    isHighlighted ? { color: `${highlightColor}` } : undefined
-                  }
-                >
-                  {word + " "}
-                </span>
-              );
-            })}
-          </div>
-        );
-      })}
+    <div className={`typewriter inter-regular ${height}`}>
+      {displayedText.map((line, index) => (
+        <div
+          key={index}
+          style={{ whiteSpace: "pre-wrap" }}
+          className='leading-tight'
+        >
+          {line.split(" ").map((word, wordIndex) => (
+            <span
+              key={wordIndex}
+              style={
+                highlightWord(word) ? { color: highlightColor } : undefined
+              }
+            >
+              {word + " "}
+            </span>
+          ))}
+        </div>
+      ))}
     </div>
   );
 };
+
 
 export default Typewriter;

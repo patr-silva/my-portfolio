@@ -11,7 +11,6 @@ const Home: React.FC = () => {
           "and",
           "I'm a Software Developer!",
         ]}
-        speed={100}
         highlightColor='#f15b5b'
       />
     </div>
