@@ -52,7 +52,7 @@ const Header: React.FC = () => {
                   }
                   aria-current='page'
                 >
-                  Home
+                  HOME
                 </NavLink>
               </li>
               <li>
@@ -64,7 +64,7 @@ const Header: React.FC = () => {
                       : "block py-2 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
                   }
                 >
-                  About
+                  ABOUT
                 </NavLink>
               </li>
               <li>
@@ -76,7 +76,7 @@ const Header: React.FC = () => {
                       : "block py-2 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
                   }
                 >
-                  Skills
+                  SKILLS
                 </NavLink>
               </li>
               <li>
@@ -88,7 +88,7 @@ const Header: React.FC = () => {
                       : "block py-2 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
                   }
                 >
-                  Projects
+                  PROJECTS
                 </NavLink>
               </li>
               <li>
@@ -100,7 +100,7 @@ const Header: React.FC = () => {
                       : "block py-2 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-red-500 md:p-0 dark:text-white dark:hover:bg-neutral-700 dark:hover:text-white"
                   }
                 >
-                  Contacts
+                  CONTACT
                 </NavLink>
               </li>
             </ul>
