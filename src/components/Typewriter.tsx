@@ -10,7 +10,7 @@ interface TypewriterProps {
 
 const Typewriter: React.FC<TypewriterProps> = ({
   text = [],
-  speed = 100,
+  speed = 70,
   highlightColor = "#F15B5B",
   height = "h-30",
 }) => {
