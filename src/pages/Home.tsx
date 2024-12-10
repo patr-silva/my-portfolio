@@ -9,8 +9,7 @@ const Home: React.FC = () => {
           "Hey there!",
           "My name is Patrícia",
           "and",
-          "I'm a",
-          "Fullstack Developer!",
+          "I'm a Software Developer!",
         ]}
         speed={100}
         highlightColor='#f15b5b'

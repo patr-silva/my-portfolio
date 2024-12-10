@@ -10,7 +10,7 @@ interface TypewriterProps {
 
 const Typewriter: React.FC<TypewriterProps> = ({
   text,
-  speed = 100,
+  speed = 150,
   highlightColor = "#F15B5B",
   height = "h-30",
 }) => {
@@ -42,19 +42,19 @@ const Typewriter: React.FC<TypewriterProps> = ({
   }, [currentCharIndex, currentLineIndex, text, speed]);
 
   return (
-    <div className={`typewriter inter-regular ${height}`}>
+    <div className={`typewriter inter-regular  ${height}`}>
       {displayedText.map((line, index) => {
         return (
-          <div key={index} style={{ whiteSpace: "pre-wrap" }}>
+          <div key={index} style={{ whiteSpace: "pre-wrap" }} className="leading-tight">
             {line.split(" ").map((word, wordIndex) => {
               const cleanedWord = word
                 .replace(/[.,/#!$%^&*;:{}=\-_`~()]/g, "")
                 .trim();
 
               const isHighlighted =
-                cleanedWord.startsWith("F") ||
+                cleanedWord.startsWith("S") ||
                 cleanedWord.startsWith("D") ||
-                (cleanedWord.startsWith("P") && cleanedWord === "Patrícia");
+                cleanedWord.startsWith("P");
 
               return (
                 <span
