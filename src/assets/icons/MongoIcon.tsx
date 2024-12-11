@@ -6,7 +6,12 @@ const MongoIcon: React.FC<{ size?: string }> = ({ size = "4em" }) => {
   const iconColor = darkMode ? "#fff" : "#000";
 
   return (
-    <svg viewBox='0 0 128 128' width={size} height={size}>
+    <svg
+      viewBox='0 0 128 128'
+      width={size}
+      height={size}
+      className='hover:w-20 hover:h-20'
+    >
       <path
         fill-rule='evenodd'
         clip-rule='evenodd'

@@ -7,7 +7,12 @@ const JsIcon: React.FC<{ size?: string }> = ({ size = "4em" }) => {
   const backgroundColor = darkMode ? "#fff" : "#000";
 
   return (
-    <svg viewBox='0 0 128 128' width={size} height={size}>
+    <svg
+      viewBox='0 0 128 128'
+      width={size}
+      height={size}
+      className='hover:w-20 hover:h-20'
+    >
       <path fill={backgroundColor} d='M1.408 1.408h125.184v125.185H1.408z' />
       <path
         fill={iconColor}
