@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
+import classNames from "classnames";
 
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,21 +22,15 @@ const Header: React.FC = () => {
               })
             }
           >
-            <svg
-              className='w-5 h-5'
-              aria-hidden='true'
-              xmlns='http://www.w3.org/2000/svg'
-              fill='none'
-              viewBox='0 0 17 14'
+            <div
+              className={classNames(`tham tham-e-squeeze tham-w-6`, {
+                "tham-active": menuOpen,
+              })}
             >
-              <path
-                stroke='currentColor'
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth='2'
-                d='M1 1h15M1 7h15M1 13h15'
-              />
-            </svg>
+              <div className='tham-box'>
+                <div className='tham-inner dark:bg-white' />
+              </div>
+            </div>
           </button>
           <div
             className={`${menuOpen ? "" : "hidden"} w-full md:block md:w-auto`}
