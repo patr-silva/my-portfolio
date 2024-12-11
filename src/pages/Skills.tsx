@@ -1,4 +1,5 @@
 import React from "react";
+import "animate.css";
 
 import JavaIcon from "../assets/icons/JavaIcon";
 import JsIcon from "../assets/icons/JsIcon";
@@ -35,10 +36,10 @@ const Skills: React.FC = () => {
     <TailwindIcon />,
   ];
   return (
-    <div className='bg-white dark:bg-neutral-900 text-black dark:text-white min-h-screen mt-[-1em]'>
+    <div className='bg-white dark:bg-neutral-900 text-black dark:text-white min-h-screen mt-[-1em] animate__animated animate__slideInRight'>
       <article className='inter-regular-text text-justify mx-auto max-w-6xl px-4 sm:px-6 md:px-8 lg:px-10 py-4 w-full'>
         <h1 className='text-6xl font-bold dark:text-neutral-200'>Skills</h1>
-        <div className='mt-16'>
+        <div className='mt-5'>
           <div className='flex flex-wrap justify-center gap-4 p-4'>
             {skillsIcons.map((elem, index) => {
               return (
