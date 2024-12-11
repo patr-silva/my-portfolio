@@ -1,5 +1,5 @@
 import React from "react";
-import Typewriter from "../components/Typewriter";
+
 import JavaIcon from "../assets/icons/JavaIcon";
 import JsIcon from "../assets/icons/JsIcon";
 import HtmlIcon from "../assets/icons/HtmlIcon";
@@ -17,28 +17,36 @@ import SqlIcon from "../assets/icons/SqlIcon";
 import MongoIcon from "../assets/icons/MongoIcon";
 
 const Skills: React.FC = () => {
+  const skillsIcons = [
+    <JsIcon />,
+    <HtmlIcon />,
+    <CssIcon />,
+    <JavaIcon />,
+    <TypescriptIcon />,
+    <ReactIcon />,
+    <NextIcon />,
+    <NodeIcon />,
+    <ExpressIcon />,
+    <SpringIcon />,
+    <HibernateIcon />,
+    <MongoIcon />,
+    <SqlIcon />,
+    <Bootstrap />,
+    <TailwindIcon />,
+  ];
   return (
     <div className='bg-white dark:bg-neutral-900 text-black dark:text-white min-h-screen mt-[-1em]'>
       <article className='inter-regular-text text-justify mx-auto max-w-6xl px-4 sm:px-6 md:px-8 lg:px-10 py-4 w-full'>
         <h1 className='text-6xl font-bold dark:text-neutral-200'>Skills</h1>
-
         <div className='mt-16'>
-          <div className='grid md:grid-cols-5 sm:grid-cols-3'>
-            <JsIcon />
-            <JavaIcon />
-            <HtmlIcon />
-            <CssIcon />
-            <TypescriptIcon />
-            <ReactIcon />
-            <NextIcon />
-            <TailwindIcon />
-            <Bootstrap />
-            <SpringIcon />
-            <HibernateIcon />
-            <NodeIcon />
-            <ExpressIcon />
-            <SqlIcon />
-            <MongoIcon />
+          <div className='flex flex-wrap justify-center gap-4 p-4'>
+            {skillsIcons.map((elem, index) => {
+              return (
+                <div className='flex justify-center items-center h-32 w-48'>
+                  {elem}
+                </div>
+              );
+            })}
           </div>
         </div>
       </article>
