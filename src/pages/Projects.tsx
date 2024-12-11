@@ -61,7 +61,7 @@ const Projects: React.FC = () => {
         <div className='flex flex-wrap my-[-5%]'>
           {projects.map((elem, index) => {
             return (
-              <div className='px-4 xl:w-1/2 md:w-1/2 w-full' key={index}>
+              <div className='p-4 xl:w-1/2 md:w-1/2 w-full' key={index}>
                 <ProjectCard
                   title={elem.title}
                   linkTo={elem.linkTo}
