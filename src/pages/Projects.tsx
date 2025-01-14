@@ -8,6 +8,7 @@ import mapeditor from "../assets/images/mapeditor.png";
 import callOfEManuel from "../assets/images/callOfEmanuel.png";
 import sneakers from "../assets/images/sneakers.png";
 import goGreen from "../assets/images/gogreen.png";
+import tutorly from "../assets/images/tutorly.png";
 import "animate.css";
 
 const Projects: React.FC = () => {
@@ -16,41 +17,55 @@ const Projects: React.FC = () => {
       title: "Race4Life",
       linkTo: "https://github.com/fmbicalho/race4life",
       image: race4life,
+      techStack: ["Javascript", "HTML", "CSS"],
+    },
+    {
+      title: "Tutorly",
+      linkTo: "https://github.com/patr-silva/fullstack_sms",
+      image: tutorly,
+      techStack: ["React", "Spring", "MySQL"],
     },
     {
       title: "Recipe App",
       linkTo: "https://github.com/patr-silva/recipe-app-client",
       image: recipe,
+      techStack: ["React", "Nodejs", "MongoDB"],
     },
     {
       title: "Nimbus",
       linkTo: "https://github.com/patr-silva/nimbus",
       image: nimbus,
+      techStack: ["Javascript", "HTML", "CSS"],
     },
     {
       title: "Bistro Café",
       linkTo: "https://github.com/patr-silva/bistro-cafe",
       image: bistro,
+      techStack: ["React", "Tailwind"],
     },
     {
       title: "Sneakers Store",
       linkTo: "https://github.com/patr-silva/Sneakers-Store",
       image: sneakers,
+      techStack: ["React", "Tailwind"],
     },
     {
       title: "MapEditor",
       linkTo: "https://github.com/patr-silva/MapEditor",
       image: mapeditor,
+      techStack: ["Java"],
     },
     {
       title: "Call of Emanuel",
       linkTo: "https://github.com/patr-silva/ShootingGame",
       image: callOfEManuel,
+      techStack: ["Java"],
     },
     {
       title: "GoGreen",
       linkTo: "https://github.com/patr-silva/GoGreen",
       image: goGreen,
+      techStack: ["React", "TypeScript", "Tailwind"],
     },
   ];
 
@@ -66,6 +81,7 @@ const Projects: React.FC = () => {
                   title={elem.title}
                   linkTo={elem.linkTo}
                   image={elem.image}
+                  techStack={elem.techStack}
                 />
               </div>
             );
